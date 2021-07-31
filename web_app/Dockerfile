@@ -12,6 +12,3 @@ RUN pip install -r requirements.txt
 
 # Run the command to start uWSGI
 CMD [ "uwsgi", "app.ini" ]
-
-ENV PORT 8000
-EXPOSE 8000
