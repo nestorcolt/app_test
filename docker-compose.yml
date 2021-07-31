@@ -20,4 +20,3 @@ services:
       - "443:443"
     volumes:
       - ./certs/:/etc/nginx/ssl
-      - ./conf/:/etc/nginx/conf.d
