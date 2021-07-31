@@ -1,11 +1,9 @@
 from app import app
-
-INDEX_HEADER_CONTENT = "CMPGroup DevOps Application Test - Nestor Colt"
+from flask import send_from_directory
 
 @app.route("/")
 def index():
-    return f"<h1>{INDEX_HEADER_CONTENT}</h1>"
-
+    return send_from_directory("static", 'landing.html')
 
 @app.route("/helloworld", methods=["GET"])
 def hello_world_endpoint():
