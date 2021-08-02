@@ -19,4 +19,4 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./certs/:/etc/nginx/ssl
+      - /home/${USERNAME}/nginx/ssl/:/etc/nginx/ssl
