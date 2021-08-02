@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Stop all ngineX processes before launch to clean up
+sudo kill $(ps aux | grep '[n]ginx' | awk '{print $2}')
+sudo docker kill nginx
+sudo docker kill web_app
+
 # Get the user machine in a env variable
 MACHINE_USER=${USER}
 
