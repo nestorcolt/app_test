@@ -10,7 +10,7 @@ This application is intended to be purely practical with the purpose of testing 
 domains for the DevOps junior position in the CMP Team.
 
 For a more detailed and high level document please refer to:
-# https://nestorcolt.atlassian.net/wiki/spaces/TECHNICAL/pages/524289/CMP+Team+Technical+Test+TDD
+https://nestorcolt.atlassian.net/wiki/spaces/TECHNICAL/pages/524289/CMP+Team+Technical+Test+TDD
 
 Developed by [Nestor Colt] no further maintance [Augost 2021]
 
