@@ -33,4 +33,13 @@ sed -i '/HOST_USER/d' .env
 echo HOST_USER=${MACHINE_USER} >> .env
 
 # Build dockerized apps and containers
-sudo docker-compose up --build --force-recreate
+sudo docker-compose up -d --build --force-recreate
+
+# Validation
+if [[ $? eq 0 ]]
+then
+    echo "Deployment completed!!!"
+    exit 0
+else
+    echo "Ops, Something went wrong with the docker-compose command. Run [sudo docker-compose up -d --build --force-recreate] and check the output."
+fi
