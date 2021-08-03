@@ -36,17 +36,19 @@ Requires [ROOT] privileges to run.
 Locate the root folder of the project un the user directory
 
 ```sh
-mv /my_app_path/CMP_APPLICATION /home/$USER/
+mv /my_project_path/CMP_APPLICATION /home/$USER/
 ```
 
 #### Deployment
 
-For production release:
+The deployment is intended to be the most automated possible, that's why is done running a shell script:
 
 ```sh
 cd CMP_APPLICATION
 bash deploy.sh
 ```
+
+The previous command will install all the dependencies to make our containers work [docker, docker-compose] also will setup "mkcert" which is in charge of generating a ssl certificate for the host machine to make redirection to https possible. The rest of the magic happens inside of the docker containers.
 
 Verify the deployment by navigating to your server address in
 your preferred browser.
