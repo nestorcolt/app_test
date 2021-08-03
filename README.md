@@ -22,10 +22,11 @@ Developed by [Nestor Colt] no further maintance [Augost 2021]
 
 The tech stack used in the development of the web app and its infrastructure
 
-- Python 3.7 - Flask web framework for backend
-- Docker 20.10.7 - Containerized layers for web server and web app
-- mkcert - Creation of local ssl certificates for development
-- Nginx - Web server running on a docker layer
+- Python 3.7
+- Docker 20.10.7
+- Docker Compose 1.29.2
+- Mkcert
+- Nginx
 
 
 ## Installation
