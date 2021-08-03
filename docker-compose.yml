@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.3"
 
 services:
 
@@ -19,6 +19,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /home/${USERNAME}/nginx/ssl/:/etc/nginx/ssl
+      - /home/${HOST_USER}/nginx/ssl/:/etc/nginx/ssl
     depends_on:
       - "flask"

@@ -4,7 +4,8 @@
 
 ## Requirements
 - Linux Ubuntu server with 20.0 LTS OS version
-- Docker 
+- Docker
+- Docker Compose
 - Root access
 
 This application is intended to be purely practical with the purpose of testing the knowledge on some important 
@@ -49,7 +50,12 @@ Verify the deployment by navigating to your server address in
 your preferred browser.
 
 `````sh
-127.0.0.1 | localhost
+https://localhost
+
+TERMINAL
+
+curl https://localhost
+curl https://localhost/helloworld
 `````
 
 ## License
