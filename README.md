@@ -6,28 +6,29 @@ A containerized web application that use Nginx and Python to create a developmen
 The target of this project is to provide a backend service https://localhost/helloworld that returns an specific payload requested by the interviewer.
 The infrastructure handles the redirection of http connections to https creating a self signed SSL certificate on the host machine to emulate the closest possible a production environment.
 
-## Requirements
-- Ubuntu Server (20.04 LTS & 18.04 LTS)
-- Root access
-
 This application is intended to be purely practical with the purpose of testing the knowledge on some important 
 domains for the DevOps junior position in the CMP Team.
 
 For a more detailed and high level document please refer to:
-https://nestorcolt.atlassian.net/wiki/spaces/TECHNICAL/pages/524289/CMP+Team+Technical+Test+TDD
+# https://nestorcolt.atlassian.net/wiki/spaces/TECHNICAL/pages/524289/CMP+Team+Technical+Test+TDD
 
 Developed by [Nestor Colt] no further maintance [Augost 2021]
+
+## Requirements
+- Ubuntu Server (20.04 LTS & 18.04 LTS)
+- Root access
+
 
 ## Tech
 
 The tech stack used in the development of the web app and its infrastructure
 
-- Python 3.7
+- Python 3.7.2
 - Docker 20.10.7
 - Docker Compose 1.29.2
-- Flask
+- Nginx 1.21.1
+- Flask2.0.1
 - Mkcert
-- Nginx
 
 
 ## Installation
