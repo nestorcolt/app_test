@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# First install dependencies (Docker, Docker-Compose)
+bash dockerSetup.sh
+
 # Stop all ngineX processes before launch to clean up
 sudo kill $(ps aux | grep '[n]ginx' | awk '{print $2}')
 sudo docker kill nginx
