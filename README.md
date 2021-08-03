@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 A containerized web application that use Nginx and Python to create a development environment and infrastructure running on different Docker layers.
-The target of this project is to provide a backend service [https://localhost/helloworld] that return an specific payload requested by the interviewer.
+The target of this project is to provide a backend service https://localhost/helloworld that returns an specific payload requested by the interviewer.
 The infrastructure handles the redirection of http connections to https creating a self signed SSL certificate on the host machine to emulate the closest possible a production environment.
 
 ## Requirements
