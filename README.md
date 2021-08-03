@@ -34,7 +34,7 @@ The tech stack used in the development of the web app and its infrastructure
 
 Requires [ROOT] privileges to run.
 
-Locate the root folder of the project un the user directory
+Locate the root folder of the project in the user directory
 
 ```sh
 mv /my_project_path/CMP_APPLICATION /home/$USER/
