@@ -25,12 +25,9 @@ mkcert -key-file /home/${MACHINE_USER}/nginx/ssl/ssl.key -cert-file /home/${MACH
 touch .env
 
 # Get the local user name to pass later on path as env variable
-USERNAME_EXISTS="$(cat .env | grep -c HOST_USER)"
 
-if [[ $USERNAME_EXISTS = 0 ]]
-then 
-    echo HOST_USER=${MACHINE_USER} >> .env
-fi
+sed -i '/HOST_USER/d' .env
+echo HOST_USER=${MACHINE_USER} >> .env
 
 # Build dockerized apps and containers
 sudo docker-compose up --build --force-recreate
