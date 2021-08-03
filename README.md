@@ -7,9 +7,7 @@ The target of this project is to provide a backend service https://localhost/hel
 The infrastructure handles the redirection of http connections to https creating a self signed SSL certificate on the host machine to emulate the closest possible a production environment.
 
 ## Requirements
-- Linux Ubuntu server with 20.0 LTS OS version
-- Docker
-- Docker Compose
+- Ubuntu Server (20.04 LTS & 18.04 LTS)
 - Root access
 
 This application is intended to be purely practical with the purpose of testing the knowledge on some important 

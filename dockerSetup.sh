@@ -1,6 +1,6 @@
 #! /bin/bash/
 
-Installing Docker Engine
+#Installing Docker Engine
 sudo apt-get update
 
 sudo apt-get install -y \
@@ -17,12 +17,11 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt-get update
-sudo apt-get install -y \
-    docker-ce \ 
-    docker-ce-cli \
-    containerd.io
+sudo apt-get install -y docker-ce 
+sudo apt-get install -y docker-ce-cli 
+sudo apt-get install -y containerd.io
 
-# # Installing Docker Compose
+# Installing Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
