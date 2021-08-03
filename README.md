@@ -25,6 +25,7 @@ The tech stack used in the development of the web app and its infrastructure
 - Python 3.7
 - Docker 20.10.7
 - Docker Compose 1.29.2
+- Flask
 - Mkcert
 - Nginx
 
