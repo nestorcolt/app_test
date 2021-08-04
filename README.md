@@ -9,10 +9,12 @@ The infrastructure handles the redirection of http connections to https creating
 This application is intended to be purely practical with the purpose of testing the knowledge on some important 
 domains for the DevOps junior position in the CMP Team.
 
+Developed by [Nestor Colt] no further maintance [Augost 2021]
+
+## Technical Design Document
 For a more detailed and high level document please refer to:
 https://nestorcolt.atlassian.net/wiki/spaces/TECHNICAL/pages/524289/CMP+Team+Technical+Test+TDD
 
-Developed by [Nestor Colt] no further maintance [Augost 2021]
 
 ## Requirements
 - Ubuntu Server (20.04 LTS & 18.04 LTS)
