@@ -36,7 +36,7 @@ echo HOST_USER=${MACHINE_USER} >> .env
 sudo docker-compose up -d --build --force-recreate
 
 # Validation
-if [[ $? eq 0 ]]
+if [[ $? = 0 ]]
 then
     echo "Deployment completed!!!"
     exit 0
