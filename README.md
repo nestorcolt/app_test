@@ -54,6 +54,12 @@ bash deploy.sh
 
 The previous command will install all the dependencies to make our containers work [docker, docker-compose] also will setup "mkcert" which is in charge of generating a ssl certificate for the host machine to make redirection to https possible. The rest of the magic happens inside of the docker containers.
 
+#### Considerations
+The product has been tested in Ubuntu versions 18.04 and 20.04 TLS always downloading the latest versions in the deployment process, however, there might be issues if the necessary software is already present in the HOST OS. It might not install new software if it finds another version already installed.
+
+It is recommended to run this software on a fresh install to avoid any issue.
+
+#### Check The Result
 Verify the deployment by navigating to your server address in
 your preferred browser.
 
